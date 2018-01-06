@@ -1,0 +1,136 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+.wrapper {
+	position: relative;
+	background: url(../img/bg.jpg) no-repeat;
+	-webkit-background-size: cover;
+	/*background-size: cover;*/
+	width: 100%;
+	height: 1180px;
+	font-family: 'helveticaneuelight';
+}
+
+
+	.header {
+		width: 100%;
+		height: 40px;
+		background-color: #085392;
+		clear: both;
+	}
+		.header>ul {
+			position: relative;
+			float: right;
+			margin-right: 15px;
+		}
+			.header>ul>li {
+				float: left;
+			}
+				.header>ul>li>a {
+					color: #60b5ed;
+					text-decoration: none;
+					line-height: 40px;
+					display: block;
+					padding: 0 15px;
+					transition: 0.5s all;
+				}
+					.header>ul>li>a:hover {
+						color: white;
+						background-color: #4eabda;
+					}
+					.header>ul>li>a.flag {
+						padding-left: 55px;
+    					border-left: 1px solid white;
+					}
+						.flag:before {
+							content: url(../img/flag.png);
+    						position: absolute;
+    						margin: 6px 0px 0 -35px;
+						}
+
+
+	.container {
+		position: absolute;
+		width: 570px;
+		height: 620px;
+		left: 50%;
+		top: 50%;
+		margin-left: -285px;
+		margin-top: -310px;
+		text-align: center;
+	}
+		.form__header {
+			width: 100%;
+			background-color: rgba(3, 4, 4, 0.7);
+			color: white;
+			margin-bottom: 5px;
+			padding: 20px 0;
+		}
+		form {
+			background-color: rgba(3, 4, 4, 0.7);	
+			padding: 15px 0;		
+		}
+			form>span {
+				display: block;
+				margin: 10px 0;
+				color: #7e807e;
+			}
+				form>span:before {
+					display: block;
+				    content: "";
+				    width: 85px;
+				    border-bottom: 1px solid black;
+				    margin: 6px 0px 0px 160px;
+				    position: absolute;
+				    border-top: 1px solid #666666;
+				}
+				form>span:after {
+					display: block;
+				    content: "";
+				    width: 85px;
+				    border-bottom: 1px solid black;
+				    margin: -10px 0px 0px 323px;
+				    position: absolute;
+				    border-top: 1px solid #666666;
+				}
+			form>label {
+				color: #cccccc;
+			    width: 277px;
+			    margin: -14px 0px 0px 156px;
+			    display: block;
+			    font-size: 15px;
+						}
+			input {
+				display: block;
+				margin: 15px 0 0 160px;
+			}
+				.facebook {
+					width: 248px;
+				    height: 30px;
+				    background-color: #364e8c;
+				    border: none;
+				    color: white;
+				    cursor: pointer;
+				}
+				.black {
+					background-color: #0f0f0f;
+				    border: none;
+				    height: 30px;
+				    width: 230px;
+				    padding-left: 18px;
+				    color: white;
+				    border-bottom: 1px solid #484848;
+				}
+				.create {
+					background-color: #3d92cf;
+				    color: white;
+				    border: none;
+				    height: 30px;
+				    width: 185px;
+				    border-radius: 2px;
+				    margin: 20px 0 10px 190px;
+				    cursor: pointer;
+				}
+					.black:focus {
+						background-color: #1b5288;
+					}
